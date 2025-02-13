@@ -6,7 +6,6 @@ body {
     margin: 0;
     background-color: #f9e3e3;
     font-family: 'Arial', sans-serif;
-
 }
 
 .container {
@@ -14,11 +13,10 @@ body {
     border: 5px solid #000;
     background: radial-gradient(circle, black 5%, transparent 5%) 0 0;
     background-size: 10px 10px; /* Задаємо інтервал між точками */
-    pointer-events: none;
+    pointer-events: auto; /* Видалено pointer-events: none, щоб дозволити взаємодію з елементами */
 }
 
 .video_container {
-    /* Загальні стилі для контейнера */
     position: relative;
     padding-bottom: 56.25%; /* Пропорція 16:9 */
     height: 0;
@@ -26,7 +24,6 @@ body {
     width: 100%;
     max-width: 640px; /* Максимальна ширина контейнера */
     margin: 0 auto;
-
 }
 
 .video_container iframe {
